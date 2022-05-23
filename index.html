@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <html lang="en-US"></html>
+    <title>How to Make A Website Accessible</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body id="text">
+    <div role="skip navigation menu" id="skip-nav">
+    <a href="#maincontent" id="skip-nav-link">Skip to main content</a>
+</div>
+
+<!-- nav bar -->
+<div role="navigation bar" class="container">
+    <div class="nav-wrapper">
+    <div class="left-side">
+        <div id="nav-title">
+        <p id="website-title">How to Make a Website Accessible</p>
+    </div>
+    </div>
+
+    <div class="right-side">
+        <div class="nav-link-wrapper">
+        <a href="about.html">About</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+            <a href="news.html">News</a>
+        </div>
+    </div>
+    </div>
+</div>
+
+<main id="maincontent"></main>
+<!-- Font-size adjustment -->
+
+<h2>1. Allow manual font size adjustment</h2>
+<p>For example:</p>
+
+<div role="font-size adjuster" class="continer">
+<div class="buttons">
+    <span class="btn active" onclick="document.getElementById('text').style.fontSize = '1em'">A</span>
+    <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.25em'">A</span>
+    <span class="btn" onclick="document.getElementById('text').style.fontSize = '1.75em'">A</span>
+</div>
+
+<!-- #1 paragraph -->
+<div class="content" id="text">
+<p id="text-under-button">People who design and build websites are usually young and don’t take into consideration how most people over 40 have declining eyesight. Also, there are about 284 million blind people around the world who, despite what you may think, do use the internet. Letting users adjust the size of the font on your website means old people and people with low-vision can access your website, thus gaining you a wider audience and more customers.</p>
+</div>
+</div>
+
+<!-- rest of the page -->
+<h2>2. Use color with care</h2>
+<p>When making a website, it’s also important to consider the colors you’re using and whether there is sufficient contrast. For example, low vision and color blind peope are still able to see enough to use their computer, but it can be difficult when they can’t distinguish colors. It’s definitely worth the trouble, considering that 300 million people worldwide are color-blind, which is actually 1 in 12 men! Some tips when dealing with color in a website are:
+    <ul>
+        <li>Provide sufficient contrast using colors and textures</li>
+        <li>Don’t rely on color alone to communicate important information</li>
+    </ul>
+</p>
+
+<h2>3. Design the website to be easily navigable by the keyboard and VoiceOver</h2>
+<p>Some of you may be wondering how exactly blind people use their phones and computers. Well, what many blind people use for their phone is a feature called VoiceOver, which is on all Apple products. This feature reads out the contents of a screen so blind people can navigate without seeing. To use a computer, many people also use the keyboard instead of a mouse as they may have weaker motor skills. In any case, it’s important to consider how you design the layout and structure of a website so it can be efficiently read by screen readers and navigated using only the keyboard.
+    <ul>
+        <li>Using proper HTML semantics</li>
+        <li>Incorporating a “Skip Navigation” button so screen readers can get to the main content faster</li>
+    </ul>
+</p>
+
+<h2>4. Include proper alt text for images & non-text content</h2>
+<p>When including images or other non-text content on your website that isn’t visible to people with vision impairments, make sure to include a detailed description of the content for the screen reader to read.</p>
+<p>Example:</p>
+
+<div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/atTI45j-Pjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="This is a video in which a blind guy explains how he uses his phone with the VoiceOver feature"></iframe>
+
+    <p id="bottom-element">If you could read the alt, it would say "This is a video in which a blind guy explains how he uses his phone with the VoiceOver feature"</p>
+</div>
+
+<button class="back-to-top hidden">Back To Top</button>
+
+</body>
+<script src="script.js"></script>
+</html>
