@@ -85,6 +85,12 @@ body {
     .buttons {
       width: 300px;
     }
+    
+    img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    }
   }
 
 /* mobile adaptation */
