@@ -81,6 +81,12 @@ body {
     margin: auto;
 }
 
+@media only screen and (max-width: 600px) {
+    .buttons {
+      width: 300px;
+    }
+  }
+
 .continer .buttons .btn {
     display: inline-flex;
     background: #1D3557;
