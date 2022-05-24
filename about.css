@@ -87,6 +87,13 @@ body {
     }
   }
 
+/* mobile adaptation */
+img {
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
+  }
+
 .continer .buttons .btn {
     display: inline-flex;
     background: #1D3557;
