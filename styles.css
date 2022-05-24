@@ -98,6 +98,10 @@ ul {
     .buttons {
       width: 300px;
     }
+   
+   iframe {
+      max-width: 100%;
+      height: auto;
   }
 
 .continer .buttons .btn {
@@ -149,8 +153,6 @@ p {
 .video {
   align-items: center;
   text-align: center;
-  max-width: 100%;
-  height: auto;
 }
 
 /* back to top button */
